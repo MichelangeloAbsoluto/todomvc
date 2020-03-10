@@ -74,7 +74,7 @@ jQuery(function ($) {
 			this.renderFooter();
 			$('#new-todo').focus();
 		},
-		Footer: function () {
+		renderFooter: function () {
 			var todoCount = this.todos.length;
 			var activeTodoCount = this.getActiveTodos().length;
 			var template = this.footerTemplate({
